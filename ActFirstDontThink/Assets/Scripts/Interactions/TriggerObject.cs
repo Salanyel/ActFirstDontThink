@@ -5,20 +5,11 @@ public class TriggerObject : MonoBehaviour {
 
     public List<ActionObject> targets;
 
-	// Use this for initialization
-	void Start ()
-    {
-	
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-	
-	}
-
     public void Activate()
     {
+
+        Debug.Log(this.gameObject.name + " has been activated", this.gameObject);
+
         foreach (ActionObject t in targets)
         {
             t.activate();
