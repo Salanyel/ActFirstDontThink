@@ -8,20 +8,41 @@ public class GameController : MonoBehaviour {
     public GameObject PlayerAvatar;
     public GameObject BotAvatar;
     public int nbBots;
+    public int nbPlayers;
+
+    struct Stats
+    {
+        public int score;
+        public int deaths;
+    }
 
     GameObject[] spawnPoints;
+
+    // bots
+    GameObject[] avatars;
+    Stats[] stats;
 
 	void Start ()
     {
         // Finding spawnpoints
         spawnPoints = GameObject.FindGameObjectsWithTag("spawn");
 
-	    // CREATING EVERYOOOOOOOOOONE
-        for (int i = 0; i < nbBots; ++i)
+        // CREATING EVERYOOOOOOOOOONE
+        avatars = new GameObject[nbPlayers + nbBots];
+
+        for (int i = 0; i < nbPlayers; ++i)
+        {
+            GameObject newPlayer = GameObject.Instantiate(PlayerAvatar);
+            newPlayer.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
+            avatars[i] = newPlayer;
+        }
+        for (int i = nbPlayers; i < nbPlayers + nbBots; ++i)
         {
             GameObject newBot = GameObject.Instantiate(BotAvatar);
             newBot.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
+            avatars[i] = newBot;
         }
+        
 	}
 	
 	// Update is called once per frame
@@ -29,4 +50,9 @@ public class GameController : MonoBehaviour {
     {
 	
 	}
+
+    public void OnBotDeath(int botIndex, int killerIndex)
+    {
+        //botStats[botIndex].deaths +=1;
+    }
 }
