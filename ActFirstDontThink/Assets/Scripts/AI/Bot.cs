@@ -24,7 +24,11 @@ public class Bot : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-	    if (agent.remainingDistance < 0.5f)
+        if (currentAction == Actions.TRAVELLING)
+        {
+            // TODO: trigger closest object
+        }
+        else
         {
             if (currentAction == Actions.PLOTTING)
             {
@@ -37,7 +41,7 @@ public class Bot : MonoBehaviour
 
     void actWithoutThinking()
     {
-        if (Random.Range(0,1) == 1)
+        if (Random.Range(0,2) == 1)
         {
             // Travelling to a new room
             int x, z, newX, newZ;
@@ -47,6 +51,7 @@ public class Bot : MonoBehaviour
         else
         {
             // Going to press another button
+            //TODO : move to button
         }
     }
 

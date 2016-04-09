@@ -27,6 +27,7 @@ public class MazeBuilder : MonoBehaviour {
                 GameObject newRoom = Instantiate(roomPrefabs[roomIndex]);
                 newRoom.transform.SetParent(cell.transform);
                 newRoom.transform.position = new Vector3(i * roomSize + roomOffset, 0, j * roomSize + roomOffset);
+                newRoom.transform.rotation = Quaternion.Euler(new Vector3(0, 90*Random.Range(0,4), 0));
                 rooms[i,j] = newRoom;
             }
         }
