@@ -1,14 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class TriggerObject : MonoBehaviour {
 
-    public List<ActionObject> targets;
+    List<ActionObject> targets;
+    bool m_canBeActivated;
+
+    public float m_timeBeforeNewActivation;    
+
+    void Start()
+    {
+        targets = new List<ActionObject>();
+        m_canBeActivated = true;
+    }
 
     public void Activate()
     {
 
+        if (!m_canBeActivated)
+        {
+            Debug.Log("The object has to wait before being activated again");
+            return;
+        }
+
         Debug.Log(this.gameObject.name + " has been activated", this.gameObject);
+
+        m_canBeActivated = false;
 
         playUseAnimation();
 
@@ -16,10 +34,19 @@ public class TriggerObject : MonoBehaviour {
         {
             t.activate();
         }
+
+        StartCoroutine(waitBeforeNewActivation());
+
     }
 
     void playUseAnimation()
     {
         GetComponent<Animator>().SetBool(AnimationsVariables.m_interactibleObject_isUsed, true);
+    }
+
+    IEnumerator waitBeforeNewActivation()
+    {
+        yield return new WaitForSeconds(m_timeBeforeNewActivation);
+        m_canBeActivated = true;
     }
 }
