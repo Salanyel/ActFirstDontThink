@@ -13,6 +13,7 @@ public class TrackPosition : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.position = target.transform.position + offset;
+        if (target != null)
+            this.transform.position = target.transform.position + offset;
 	}
 }

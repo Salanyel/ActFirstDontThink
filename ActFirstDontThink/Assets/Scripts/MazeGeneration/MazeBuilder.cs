@@ -11,7 +11,7 @@ public class MazeBuilder : MonoBehaviour {
     int roomOffset;
 
 	// Use this for initialization
-	void Start ()
+	void Awake ()
     {
         roomOffset = roomSize / 2;
 
