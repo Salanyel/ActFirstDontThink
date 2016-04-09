@@ -250,48 +250,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 538425883}
   offset: {x: 0, y: 20, z: 0}
---- !u!1001 &898351272
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400004, guid: 509842919df346b4588144081f905bff, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.995
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 509842919df346b4588144081f905bff, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.883
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 509842919df346b4588144081f905bff, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.242
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 509842919df346b4588144081f905bff, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 509842919df346b4588144081f905bff, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 509842919df346b4588144081f905bff, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 509842919df346b4588144081f905bff, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400004, guid: 509842919df346b4588144081f905bff, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 509842919df346b4588144081f905bff, type: 3}
-  m_IsPrefabParent: 0
 --- !u!1 &1439739680
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,8 +354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomPrefabs:
   - {fileID: 165532, guid: 38d23b217b043044f8aedabaac637b23, type: 2}
-  - {fileID: 109654, guid: 7f140e1fcbaeba14ab1537cf934dc894, type: 2}
-  - {fileID: 102678, guid: 0713e160584e8174e806a8e61cb325a5, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   roomSize: 10
   labyrinthSize: 5
 --- !u!4 &1678966369
