@@ -6,6 +6,7 @@ public class TriggerObject : MonoBehaviour {
 
     List<ActionObject> targets;
     bool m_canBeActivated;
+    int m_playerId;
 
     public float m_timeBeforeNewActivation;    
 
@@ -13,6 +14,11 @@ public class TriggerObject : MonoBehaviour {
     {
         targets = new List<ActionObject>();
         m_canBeActivated = true;
+    }
+
+    public void setPlayerWhoUseIt(int p_id)
+    {
+        m_playerId = p_id;
     }
 
     public void Activate()
@@ -24,7 +30,7 @@ public class TriggerObject : MonoBehaviour {
             return;
         }
 
-        Debug.Log(this.gameObject.name + " has been activated", this.gameObject);
+        Debug.Log(this.gameObject.name + " has been activated by player " + m_playerId, this.gameObject);
 
         m_canBeActivated = false;
 

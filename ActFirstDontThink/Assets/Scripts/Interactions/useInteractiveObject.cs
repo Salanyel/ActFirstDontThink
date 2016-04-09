@@ -63,6 +63,7 @@ public class useInteractiveObject : MonoBehaviour {
         if (index != -1)
         {
             Debug.Log("Object triggered : " + m_objects[index].name, m_objects[index]);
+            m_objects[index].GetComponent<TriggerObject>().setPlayerWhoUseIt(GetComponent<PlayerId>().m_id);
             m_objects[index].GetComponent<TriggerObject>().Activate();
         }
         else
