@@ -353,7 +353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPrefabs:
-  - {fileID: 165532, guid: 38d23b217b043044f8aedabaac637b23, type: 2}
+  - {fileID: 167212, guid: 7f140e1fcbaeba14ab1537cf934dc894, type: 2}
+  - {fileID: 136312, guid: 0713e160584e8174e806a8e61cb325a5, type: 2}
+  - {fileID: 148746, guid: 24a6a5d3e4dc51b4494c0894ad475902, type: 2}
   roomSize: 10
   labyrinthSize: 5
 --- !u!4 &1678966369

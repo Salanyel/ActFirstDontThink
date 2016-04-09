@@ -21,7 +21,7 @@ public class MazeBuilder : MonoBehaviour {
         {
             for (int j = 0; j < labyrinthSize; ++j)
             {
-                int roomIndex = Random.Range(0, roomPrefabs.Count - 1);
+                int roomIndex = Random.Range(0, roomPrefabs.Count);
                 GameObject newRoom = Instantiate(roomPrefabs[roomIndex]);
                 newRoom.transform.SetParent(cell.transform);
                 newRoom.transform.position = new Vector3(i * roomSize + roomOffset, 0, j * roomSize + roomOffset);
