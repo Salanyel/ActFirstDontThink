@@ -7,8 +7,9 @@ public class Bot : MonoBehaviour
 
     enum Actions
     {
-        TRAVELLING,
-        PLOTTING
+        
+        TRAVELLING,//Changer de cellules
+        PLOTTING//Faire une action
     };
 
     NavMeshAgent agent;
@@ -25,11 +26,16 @@ public class Bot : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (currentAction == Actions.TRAVELLING && agent.remainingDistance < 4.5f)
-            actWithoutThinking();
-        else if (currentAction == Actions.PLOTTING && agent.remainingDistance < 1f)
+
+        if (currentAction == Actions.TRAVELLING && agent.remainingDistance <4.5f)    
         {
-            // TODO : trigger object
+           
+            actWithoutThinking();
+        }
+        else if(currentAction == Actions.PLOTTING && agent.remainingDistance <1f)
+        {
+    
+
             actWithoutThinking();
         }
 	}
@@ -49,6 +55,8 @@ public class Bot : MonoBehaviour
 
             Vector3 cellDestination = new Vector3(newX * 10 + 5, 0, newZ * 10 + 5);
             agent.SetDestination(cellDestination);
+            isDestinationValid(newX, newZ);
+            this.currentAction = Actions.TRAVELLING;
         }
         else
         {
@@ -66,6 +74,8 @@ public class Bot : MonoBehaviour
             Vector3 destination = new Vector3(newX, 0.0f, newZ);
             agent.SetDestination(destination);
         }
+
+        
     }
 
 
@@ -179,5 +189,62 @@ public class Bot : MonoBehaviour
 
 
         return listOfObjectInRoom;
+    }
+
+    void isDestinationValid(int x, int z)
+    {
+      
+        switch (builder.getTypeCell(x, z)){
+            case 2:
+                GameObject[] listOfObject2 = GameObject.FindGameObjectsWithTag("Respawn");
+                foreach (GameObject item in listOfObject2)
+                {
+                    int itemX = (int)Mathf.Floor(item.transform.position.x % 10);
+                    int itemZ = (int)Mathf.Floor(item.transform.position.y % 10);
+
+                    if(x == itemX && z == itemZ)
+                    {
+                        Vector3 dest = new Vector3(item.transform.position.x, 0.0f, item.transform.position.z);
+                            
+                        agent.SetDestination(dest);
+                    }
+                }
+            
+                    break;
+            case 6:
+                GameObject[] listOfObject6 = GameObject.FindGameObjectsWithTag("Respawn");
+                foreach (GameObject item in listOfObject6)
+                {
+                    int itemX = (int)Mathf.Floor(item.transform.position.x % 10);
+                    int itemZ = (int)Mathf.Floor(item.transform.position.y % 10);
+
+                    if (x == itemX && z == itemZ)
+                    {
+                        Vector3 dest = new Vector3(item.transform.position.x, 0.0f, item.transform.position.z);
+
+                        agent.SetDestination(dest);
+                    }
+                }
+                break;
+
+            case 8:
+                GameObject[] listOfObject8 = GameObject.FindGameObjectsWithTag("Respawn");
+                foreach (GameObject item in listOfObject8)
+                {
+                    int itemX = (int)Mathf.Floor(item.transform.position.x % 10);
+                    int itemZ = (int)Mathf.Floor(item.transform.position.y % 10);
+
+                    if (x == itemX && z == itemZ)
+                    {
+                        Vector3 dest = new Vector3(item.transform.position.x, 0.0f, item.transform.position.z);
+
+                        agent.SetDestination(dest);
+                    }
+                }
+                break;
+
+            default:
+                break;
+        }
     }
 }
