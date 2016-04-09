@@ -400,6 +400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7167f93fd4c564b4c8d7a75e8e22b80f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_objects: []
   m_virtualActivateButton: UseP1
 --- !u!136 &893972053
 CapsuleCollider:
@@ -678,6 +679,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7167f93fd4c564b4c8d7a75e8e22b80f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_objects: []
   m_virtualActivateButton: UseP2
 --- !u!136 &1488577650
 CapsuleCollider:

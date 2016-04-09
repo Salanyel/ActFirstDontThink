@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class useInteractiveObject : MonoBehaviour {
 
-    protected List<GameObject> m_objects;
+    public List<GameObject> m_objects;
 
     #region Unity Methodes
 
