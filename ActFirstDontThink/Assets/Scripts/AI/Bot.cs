@@ -52,7 +52,7 @@ public class Bot : MonoBehaviour {
             case 1:
                 //Mouvement vers la droite si le pion n'est pas sur le bord droit. 
                 //Si sur le bord droit vas a gauche.
-                if(x == builder.size - 1)
+                if(x == builder.labyrinthSize - 1)
                 {
                     newX = x - 1;
                     newZ = z;
@@ -84,7 +84,7 @@ public class Bot : MonoBehaviour {
             case 3:
                 //Mouvement vers le bas si le pion n'est pas sur le bord bas
                 //Vas vers le haut sinon
-                if (z == builder.size - 1)
+                if (z == builder.labyrinthSize - 1)
                 {
                     newX = x;
                     newZ = z - 1;
