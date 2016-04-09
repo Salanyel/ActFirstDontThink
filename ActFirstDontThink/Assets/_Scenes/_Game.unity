@@ -335,7 +335,7 @@ GameObject:
   - 4: {fileID: 1678966369}
   - 114: {fileID: 1678966368}
   m_Layer: 0
-  m_Name: Builder
+  m_Name: MazeBuilder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -355,7 +355,7 @@ MonoBehaviour:
   roomPrefabs:
   - {fileID: 165532, guid: 38d23b217b043044f8aedabaac637b23, type: 2}
   roomSize: 10
-  size: 3
+  labyrinthSize: 5
 --- !u!4 &1678966369
 Transform:
   m_ObjectHideFlags: 0

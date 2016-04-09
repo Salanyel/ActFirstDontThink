@@ -5,7 +5,7 @@ public class MazeBuilder : MonoBehaviour {
 
     public List<GameObject> roomPrefabs;
     public int roomSize = 10;
-    public int size = 5;
+    public int labyrinthSize = 5;
 
     //List<GameObject> rooms;
     int roomOffset;
@@ -17,9 +17,9 @@ public class MazeBuilder : MonoBehaviour {
 
         // Creating cells
         GameObject cell = new GameObject("Cells");
-	    for (int i = 0; i < size; ++i)
+	    for (int i = 0; i < labyrinthSize; ++i)
         {
-            for (int j = 0; j < size; ++j)
+            for (int j = 0; j < labyrinthSize; ++j)
             {
                 int roomIndex = Random.Range(0, roomPrefabs.Count - 1);
                 GameObject newRoom = Instantiate(roomPrefabs[roomIndex]);
@@ -28,10 +28,5 @@ public class MazeBuilder : MonoBehaviour {
                 //rooms.Add(newRoom);
             }
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }
