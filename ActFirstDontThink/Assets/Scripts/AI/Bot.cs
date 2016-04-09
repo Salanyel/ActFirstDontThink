@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Bot : MonoBehaviour
 {
@@ -41,17 +42,26 @@ public class Bot : MonoBehaviour
 
     void actWithoutThinking()
     {
+
+        int x, z;
+        getCurrentCellIndex(out x, out z);
+
         if (Random.Range(0,2) == 1)
         {
             // Travelling to a new room
-            int x, z, newX, newZ;
-            getCurrentCellIndex(out x, out z);
+            int newX, newZ;
             nextRandomRoom(x, z, out newX, out newZ);
+
+            Vector3 cellDestination = new Vector3(newX * 10 + 5, 0, newZ * 10 + 5);
+            agent.SetDestination(cellDestination);
         }
         else
         {
             // Going to press another button
             //TODO : move to button
+
+            List<GameObject> objectInRoom = FindObjectInRoom();
+
         }
     }
 
@@ -142,5 +152,29 @@ public class Bot : MonoBehaviour
                 newZ = z;
                 break;
         }
+    }
+
+   List<GameObject> FindObjectInRoom()
+    {
+
+        //TODO : Completer le tag !!!!!
+        GameObject[] listOfObject = GameObject.FindGameObjectsWithTag("");
+        List<GameObject> listOfObjectInRoom = new List<GameObject>();
+        
+        int botX, botY;
+        this.getCurrentCellIndex(out botX, out botY);
+
+        int itemX, itemY;
+        foreach(GameObject item in listOfObject){
+            itemX = (int)Mathf.Floor(item.transform.position.x % 10);
+            itemY = (int)Mathf.Floor(item.transform.position.y % 10);
+            
+            if(itemX == botX && itemY == botY)
+                listOfObjectInRoom.Add(item);
+             
+        }
+
+
+        return listOfObjectInRoom;
     }
 }
