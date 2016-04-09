@@ -4,8 +4,7 @@ using System.Collections.Generic;
 
 public class useInteractiveObject : MonoBehaviour {
 
-    List<GameObject> m_objects;
-    public string m_virtualActivateButton;
+    protected List<GameObject> m_objects;
 
     #region Unity Methodes
 
@@ -18,11 +17,8 @@ public class useInteractiveObject : MonoBehaviour {
     {
         if (m_objects.Count > 0)
         {
-            if (Input.GetButtonDown(m_virtualActivateButton))
-            {
-                useNeariestInteractibleObject();
-            }
-        }
+            shouldUseObject();
+        }        
     }
 
     void OnTriggerEnter(Collider p_other)
@@ -45,7 +41,7 @@ public class useInteractiveObject : MonoBehaviour {
 
         #region Methods
 
-        void useNeariestInteractibleObject()
+        protected void useNeariestInteractibleObject()
     {
         GameObject gameObject;
         float distance = -1;
@@ -74,6 +70,11 @@ public class useInteractiveObject : MonoBehaviour {
             Debug.Log("No object to activate from " + this.gameObject.name, this.gameObject);
         }
     }
+
+        virtual protected void shouldUseObject()
+        {
+            useNeariestInteractibleObject();
+        }
 
     #endregion
 
