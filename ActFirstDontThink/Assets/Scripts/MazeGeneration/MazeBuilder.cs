@@ -32,4 +32,9 @@ public class MazeBuilder : MonoBehaviour {
             }
         }
 	}
+
+    public int getTypeCell(int x, int z)
+    {
+        //TODO Amarre
+    }
 }
