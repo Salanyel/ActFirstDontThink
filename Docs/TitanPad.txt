@@ -1,0 +1,130 @@
+Multi local ==> Oui
+
+Golé : 
+Gameplay :
+ - Course dans labyrinthe (PLEIN DE PIEGE !!! METTRE DES PANCARTES DU SWAG !)
+ - Traverser le labyrinthe
+ - 3D
+
+
+Amarre:
+Epervier : un "épervier" doit attraper les humains. Les humains attrapés deviennent un épervier. Survivre plus longtemps rapporte plus de points aux humains.
+- En multi agents : donc plein plein plein de bots et les umains au milieu.
+Mashup avec l'idée ythèr : 
+- Les éperviers doivent chopper les humains
+- L'environnement est blindé d'intéractions incompréhensibles
+
+
+Proko : 
+Side scrolling 2D ou le bonhomme avance, (plateformer), tu donnes des ordres via des boutons.
+Perso exécute instantanément des ordres (fuck physique // sauf le jump)
+Perso réagisse à chacun des ordres
+
+Stay :
+Euuuuh
+
+
+Ythèr :
+Gros "belu" (désolé connaît pas) qui réfléchis pas
+Tu affiches les tutos, le barbare ne sait pas lire, mais ça fait des trucs
+A la fin, tout s'enlève, et tu as juste un bouton rouge TAPER
+Pleins d'indications dans le décor incompréhensible
+Pleins de bouton et de leviers qui font des événments random ou pas du tout,
+Expérience du pigoen !!!!!!!!!! 
+Le player peut remplacer les textes par ce qu'il veut (aide mémoire) (y compris dans les menus)
+
+
+Choix :
+Gros belus & multi local
+!#@?%
+But du jeu : On sort du labyrinthe (arène) le premier (compétition entre joueur) // ou être le dernier survivant
+Comment : 
+ - Labyrinthe de prefab 
+ - Tuer des gens avec les boutons
+ - Compter les kills
+ - Pas d'interface
+ - Si le mec stagne, on le tue. On ne réfléchit pas !
+ 
+ 
+Tâches :
+- Son : Amarre
+
+- Graphisme : Golé
+ - Modélisation 3D : Golé
+    - Personnage
+    - Mur
+    - BoutonS
+    - PiègeS (Piques, flammes, chute, etc.)
+        
+- Labyrinthe : Proko + Ythèr
+    - Préfabs de labyrinthes
+    - Préfabs de pièges
+    - Spawn des joueurs
+    - Générer tout ce bordel avec joie et bonne humeur (surtout de la bonne humeur)
+    
+- Avatars : Amarre + Stay
+    - Multi agents
+    - Navigation
+    - Interaction avec les pièges du labyrinthe
+    - Compteur de vie, mort, etc
+-  
+
+Game design : Tout le monde
+ - Liste des intéractions
+ - Liste des pièges
+ - Liste des
+ 
+ - Rien (Stay & Amarre)
+  - Manger des pizzas
+  - Faire du billard
+  - Dormir
+
+
+
+
+GAME DESIGN
+But de la partie : Faire du score
+- Fin de la partie : temps
+
+Gampelay : nerveux, rapide
+
+Interactions : 
+TYpes d'interacitons
+- leviers : change le labyrinthe (portes, murs, etc)
+- boutons : pièges (Plusieurs couleurs/piège ?)
+Couleurs : type de piège différent
+- Bonus : 
+    - Shield 
+    - Augmente la vitesse 
+    - Rend une vie
+
+Avatars ; pas très résistants
+Les joueurs respawn a leur mort
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
