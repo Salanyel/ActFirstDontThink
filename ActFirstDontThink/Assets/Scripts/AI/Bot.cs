@@ -14,7 +14,7 @@ public class Bot : MonoBehaviour
     NavMeshAgent agent;
     Actions currentAction;
 
-    public MazeBuilder builder;
+    MazeBuilder builder;
 	// Use this for initialization
 	void Start ()
     {
@@ -25,17 +25,11 @@ public class Bot : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (currentAction == Actions.TRAVELLING)
+        if (currentAction == Actions.TRAVELLING && agent.remainingDistance < 4.5f)
+            actWithoutThinking();
+        else if (currentAction == Actions.PLOTTING && agent.remainingDistance < 1f)
         {
-            // TODO: trigger closest object
-        }
-        else
-        {
-            if (currentAction == Actions.PLOTTING)
-            {
-                // TODO: trigger closest object
-            }
-
+            // TODO : trigger object
             actWithoutThinking();
         }
 	}
@@ -71,8 +65,6 @@ public class Bot : MonoBehaviour
 
             Vector3 destination = new Vector3(newX, 0.0f, newZ);
             agent.SetDestination(destination);
-
-
         }
     }
 
