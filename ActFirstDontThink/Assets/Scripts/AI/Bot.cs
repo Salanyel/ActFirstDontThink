@@ -48,6 +48,7 @@ public class Bot : MonoBehaviour
 
         if (Random.Range(0,2) == 1)
         {
+
             // Travelling to a new room
             int newX, newZ;
             nextRandomRoom(x, z, out newX, out newZ);
@@ -59,8 +60,18 @@ public class Bot : MonoBehaviour
         {
             // Going to press another button
             //TODO : move to button
-
+            float newX, newZ;
             List<GameObject> objectInRoom = FindObjectInRoom();
+            int objectRand = Random.Range(0, objectInRoom.Count);
+
+            GameObject objectChoice = objectInRoom[objectRand];
+
+            newX = objectChoice.transform.position.x;
+            newZ = objectChoice.transform.position.z;
+
+            Vector3 destination = new Vector3(newX, 0.0f, newZ);
+            agent.SetDestination(destination);
+
 
         }
     }
@@ -158,7 +169,7 @@ public class Bot : MonoBehaviour
     {
 
         //TODO : Completer le tag !!!!!
-        GameObject[] listOfObject = GameObject.FindGameObjectsWithTag("");
+        GameObject[] listOfObject = GameObject.FindGameObjectsWithTag("InteractibleObject");
         List<GameObject> listOfObjectInRoom = new List<GameObject>();
         
         int botX, botY;
