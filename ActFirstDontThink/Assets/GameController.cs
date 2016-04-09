@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour {
     {
         public int score;
         public int deaths;
+        public int kills;
     }
 
     GameObject[] spawnPoints;
@@ -51,8 +52,9 @@ public class GameController : MonoBehaviour {
 	
 	}
 
-    public void OnBotDeath(int botIndex, int killerIndex)
+    public void OnBotDeath(int deadGuyIndex, int killerIndex)
     {
-        //botStats[botIndex].deaths +=1;
+        stats[deadGuyIndex].deaths +=1;
+        stats[killerIndex].kills += 1;
     }
 }
