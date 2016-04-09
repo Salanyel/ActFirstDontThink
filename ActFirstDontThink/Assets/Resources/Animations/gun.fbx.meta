@@ -65,7 +65,7 @@ ModelImporter:
     7400010: Icosphere.007|Icosphere.004Action
     7400012: Icosphere.007|Icosphere.005Action
     7400014: Icosphere.007|Icosphere.006Action
-    7400016: Icosphere.007|Icosphere.007Action
+    7400016: Bullet7
     7400018: Icosphere.007|IcosphereAction
     7400020: Icosphere.006|Circle.004Action
     7400022: Icosphere.006|CircleAction
@@ -74,7 +74,7 @@ ModelImporter:
     7400028: Icosphere.006|Icosphere.003Action
     7400030: Icosphere.006|Icosphere.004Action
     7400032: Icosphere.006|Icosphere.005Action
-    7400034: Icosphere.006|Icosphere.006Action
+    7400034: Bullet6
     7400036: Icosphere.006|Icosphere.007Action
     7400038: Icosphere.006|IcosphereAction
     7400040: Icosphere.005|Circle.004Action
@@ -83,7 +83,7 @@ ModelImporter:
     7400046: Icosphere.005|Icosphere.002Action
     7400048: Icosphere.005|Icosphere.003Action
     7400050: Icosphere.005|Icosphere.004Action
-    7400052: Icosphere.005|Icosphere.005Action
+    7400052: Bullet5
     7400054: Icosphere.005|Icosphere.006Action
     7400056: Icosphere.005|Icosphere.007Action
     7400058: Icosphere.005|IcosphereAction
@@ -92,7 +92,7 @@ ModelImporter:
     7400064: Icosphere.004|Icosphere.001Action
     7400066: Icosphere.004|Icosphere.002Action
     7400068: Icosphere.004|Icosphere.003Action
-    7400070: Icosphere.004|Icosphere.004Action
+    7400070: Bullet4
     7400072: Icosphere.004|Icosphere.005Action
     7400074: Icosphere.004|Icosphere.006Action
     7400076: Icosphere.004|Icosphere.007Action
@@ -101,7 +101,7 @@ ModelImporter:
     7400082: Icosphere.003|CircleAction
     7400084: Icosphere.003|Icosphere.001Action
     7400086: Icosphere.003|Icosphere.002Action
-    7400088: Icosphere.003|Icosphere.003Action
+    7400088: Bullet3
     7400090: Icosphere.003|Icosphere.004Action
     7400092: Icosphere.003|Icosphere.005Action
     7400094: Icosphere.003|Icosphere.006Action
@@ -110,7 +110,7 @@ ModelImporter:
     7400100: Icosphere.002|Circle.004Action
     7400102: Icosphere.002|CircleAction
     7400104: Icosphere.002|Icosphere.001Action
-    7400106: Icosphere.002|Icosphere.002Action
+    7400106: Bullet2
     7400108: Icosphere.002|Icosphere.003Action
     7400110: Icosphere.002|Icosphere.004Action
     7400112: Icosphere.002|Icosphere.005Action
@@ -119,7 +119,7 @@ ModelImporter:
     7400118: Icosphere.002|IcosphereAction
     7400120: Icosphere.001|Circle.004Action
     7400122: Icosphere.001|CircleAction
-    7400124: Icosphere.001|Icosphere.001Action
+    7400124: Bullet1
     7400126: Icosphere.001|Icosphere.002Action
     7400128: Icosphere.001|Icosphere.003Action
     7400130: Icosphere.001|Icosphere.004Action
@@ -136,8 +136,8 @@ ModelImporter:
     7400152: Icosphere|Icosphere.005Action
     7400154: Icosphere|Icosphere.006Action
     7400156: Icosphere|Icosphere.007Action
-    7400158: Icosphere|IcosphereAction
-    7400160: Circle.004|Circle.004Action
+    7400158: Bullet
+    7400160: Guns
     7400162: Circle.004|CircleAction
     7400164: Circle.004|Icosphere.001Action
     7400166: Circle.004|Icosphere.002Action
@@ -148,7 +148,7 @@ ModelImporter:
     7400176: Circle.004|Icosphere.007Action
     7400178: Circle.004|IcosphereAction
     7400180: Circle|Circle.004Action
-    7400182: Circle|CircleAction
+    7400182: Base
     7400184: Circle|Icosphere.001Action
     7400186: Circle|Icosphere.002Action
     7400188: Circle|Icosphere.003Action
@@ -157,6 +157,11 @@ ModelImporter:
     7400194: Circle|Icosphere.006Action
     7400196: Circle|Icosphere.007Action
     7400198: Circle|IcosphereAction
+    7400200: Bullet7
+    7400202: Icosphere.006|Icosphere.006Action0
+    7400204: Bullet5
+    7400206: Bullet4
+    7400208: Bullet3
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -178,7 +183,5007 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Icosphere.007|Circle.004Action
+      takeName: Icosphere.007|Circle.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.007|CircleAction
+      takeName: Icosphere.007|CircleAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.007|Icosphere.001Action
+      takeName: Icosphere.007|Icosphere.001Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.007|Icosphere.002Action
+      takeName: Icosphere.007|Icosphere.002Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.007|Icosphere.003Action
+      takeName: Icosphere.007|Icosphere.003Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.007|Icosphere.004Action
+      takeName: Icosphere.007|Icosphere.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.007|Icosphere.005Action
+      takeName: Icosphere.007|Icosphere.005Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.007|Icosphere.006Action
+      takeName: Icosphere.007|Icosphere.006Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bullet7
+      takeName: Icosphere.007|Icosphere.007Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.007|IcosphereAction
+      takeName: Icosphere.007|IcosphereAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.006|Circle.004Action
+      takeName: Icosphere.006|Circle.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.006|CircleAction
+      takeName: Icosphere.006|CircleAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.006|Icosphere.001Action
+      takeName: Icosphere.006|Icosphere.001Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.006|Icosphere.002Action
+      takeName: Icosphere.006|Icosphere.002Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.006|Icosphere.003Action
+      takeName: Icosphere.006|Icosphere.003Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.006|Icosphere.004Action
+      takeName: Icosphere.006|Icosphere.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.006|Icosphere.005Action
+      takeName: Icosphere.006|Icosphere.005Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bullet6
+      takeName: Icosphere.006|Icosphere.006Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.006|Icosphere.007Action
+      takeName: Icosphere.006|Icosphere.007Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.006|IcosphereAction
+      takeName: Icosphere.006|IcosphereAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.005|Circle.004Action
+      takeName: Icosphere.005|Circle.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.005|CircleAction
+      takeName: Icosphere.005|CircleAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.005|Icosphere.001Action
+      takeName: Icosphere.005|Icosphere.001Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.005|Icosphere.002Action
+      takeName: Icosphere.005|Icosphere.002Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.005|Icosphere.003Action
+      takeName: Icosphere.005|Icosphere.003Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.005|Icosphere.004Action
+      takeName: Icosphere.005|Icosphere.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bullet5
+      takeName: Icosphere.005|Icosphere.005Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.005|Icosphere.006Action
+      takeName: Icosphere.005|Icosphere.006Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.005|Icosphere.007Action
+      takeName: Icosphere.005|Icosphere.007Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.005|IcosphereAction
+      takeName: Icosphere.005|IcosphereAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.004|Circle.004Action
+      takeName: Icosphere.004|Circle.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.004|CircleAction
+      takeName: Icosphere.004|CircleAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.004|Icosphere.001Action
+      takeName: Icosphere.004|Icosphere.001Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.004|Icosphere.002Action
+      takeName: Icosphere.004|Icosphere.002Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.004|Icosphere.003Action
+      takeName: Icosphere.004|Icosphere.003Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bullet4
+      takeName: Icosphere.004|Icosphere.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.004|Icosphere.005Action
+      takeName: Icosphere.004|Icosphere.005Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.004|Icosphere.006Action
+      takeName: Icosphere.004|Icosphere.006Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.004|Icosphere.007Action
+      takeName: Icosphere.004|Icosphere.007Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.004|IcosphereAction
+      takeName: Icosphere.004|IcosphereAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.003|Circle.004Action
+      takeName: Icosphere.003|Circle.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.003|CircleAction
+      takeName: Icosphere.003|CircleAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.003|Icosphere.001Action
+      takeName: Icosphere.003|Icosphere.001Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.003|Icosphere.002Action
+      takeName: Icosphere.003|Icosphere.002Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bullet3
+      takeName: Icosphere.003|Icosphere.003Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.003|Icosphere.004Action
+      takeName: Icosphere.003|Icosphere.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.003|Icosphere.005Action
+      takeName: Icosphere.003|Icosphere.005Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.003|Icosphere.006Action
+      takeName: Icosphere.003|Icosphere.006Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.003|Icosphere.007Action
+      takeName: Icosphere.003|Icosphere.007Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.003|IcosphereAction
+      takeName: Icosphere.003|IcosphereAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.002|Circle.004Action
+      takeName: Icosphere.002|Circle.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.002|CircleAction
+      takeName: Icosphere.002|CircleAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.002|Icosphere.001Action
+      takeName: Icosphere.002|Icosphere.001Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bullet2
+      takeName: Icosphere.002|Icosphere.002Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.002|Icosphere.003Action
+      takeName: Icosphere.002|Icosphere.003Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.002|Icosphere.004Action
+      takeName: Icosphere.002|Icosphere.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.002|Icosphere.005Action
+      takeName: Icosphere.002|Icosphere.005Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.002|Icosphere.006Action
+      takeName: Icosphere.002|Icosphere.006Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.002|Icosphere.007Action
+      takeName: Icosphere.002|Icosphere.007Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.002|IcosphereAction
+      takeName: Icosphere.002|IcosphereAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.001|Circle.004Action
+      takeName: Icosphere.001|Circle.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.001|CircleAction
+      takeName: Icosphere.001|CircleAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bullet1
+      takeName: Icosphere.001|Icosphere.001Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.001|Icosphere.002Action
+      takeName: Icosphere.001|Icosphere.002Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.001|Icosphere.003Action
+      takeName: Icosphere.001|Icosphere.003Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.001|Icosphere.004Action
+      takeName: Icosphere.001|Icosphere.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.001|Icosphere.005Action
+      takeName: Icosphere.001|Icosphere.005Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.001|Icosphere.006Action
+      takeName: Icosphere.001|Icosphere.006Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.001|Icosphere.007Action
+      takeName: Icosphere.001|Icosphere.007Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere.001|IcosphereAction
+      takeName: Icosphere.001|IcosphereAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere|Circle.004Action
+      takeName: Icosphere|Circle.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere|CircleAction
+      takeName: Icosphere|CircleAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere|Icosphere.001Action
+      takeName: Icosphere|Icosphere.001Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere|Icosphere.002Action
+      takeName: Icosphere|Icosphere.002Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere|Icosphere.003Action
+      takeName: Icosphere|Icosphere.003Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere|Icosphere.004Action
+      takeName: Icosphere|Icosphere.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere|Icosphere.005Action
+      takeName: Icosphere|Icosphere.005Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere|Icosphere.006Action
+      takeName: Icosphere|Icosphere.006Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Icosphere|Icosphere.007Action
+      takeName: Icosphere|Icosphere.007Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bullet
+      takeName: Icosphere|IcosphereAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Guns
+      takeName: Circle.004|Circle.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle.004|CircleAction
+      takeName: Circle.004|CircleAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle.004|Icosphere.001Action
+      takeName: Circle.004|Icosphere.001Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle.004|Icosphere.002Action
+      takeName: Circle.004|Icosphere.002Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle.004|Icosphere.003Action
+      takeName: Circle.004|Icosphere.003Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle.004|Icosphere.004Action
+      takeName: Circle.004|Icosphere.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle.004|Icosphere.005Action
+      takeName: Circle.004|Icosphere.005Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle.004|Icosphere.006Action
+      takeName: Circle.004|Icosphere.006Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle.004|Icosphere.007Action
+      takeName: Circle.004|Icosphere.007Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle.004|IcosphereAction
+      takeName: Circle.004|IcosphereAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle|Circle.004Action
+      takeName: Circle|Circle.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Base
+      takeName: Circle|CircleAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle|Icosphere.001Action
+      takeName: Circle|Icosphere.001Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle|Icosphere.002Action
+      takeName: Circle|Icosphere.002Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle|Icosphere.003Action
+      takeName: Circle|Icosphere.003Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle|Icosphere.004Action
+      takeName: Circle|Icosphere.004Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle|Icosphere.005Action
+      takeName: Circle|Icosphere.005Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle|Icosphere.006Action
+      takeName: Circle|Icosphere.006Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle|Icosphere.007Action
+      takeName: Circle|Icosphere.007Action
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Circle|IcosphereAction
+      takeName: Circle|IcosphereAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Circle.004
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Icosphere.001
+        weight: 1
+      - path: Icosphere.002
+        weight: 1
+      - path: Icosphere.003
+        weight: 1
+      - path: Icosphere.004
+        weight: 1
+      - path: Icosphere.005
+        weight: 1
+      - path: Icosphere.006
+        weight: 1
+      - path: Icosphere.007
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
