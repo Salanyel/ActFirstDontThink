@@ -7,7 +7,7 @@ public class MazeBuilder : MonoBehaviour {
     public int roomSize = 10;
     public int labyrinthSize = 5;
 
-    //List<GameObject> rooms;
+    GameObject[,] rooms;
     int roomOffset;
 
 	// Use this for initialization
@@ -15,17 +15,20 @@ public class MazeBuilder : MonoBehaviour {
     {
         roomOffset = roomSize / 2;
 
+        rooms = new GameObject[labyrinthSize,labyrinthSize];
+
         // Creating cells
         GameObject cell = new GameObject("Cells");
 	    for (int i = 0; i < labyrinthSize; ++i)
         {
             for (int j = 0; j < labyrinthSize; ++j)
             {
-                int roomIndex = Random.Range(0, roomPrefabs.Count - 1);
+                int roomIndex = Random.Range(0, roomPrefabs.Count);
                 GameObject newRoom = Instantiate(roomPrefabs[roomIndex]);
                 newRoom.transform.SetParent(cell.transform);
                 newRoom.transform.position = new Vector3(i * roomSize + roomOffset, 0, j * roomSize + roomOffset);
-                //rooms.Add(newRoom);
+                newRoom.transform.rotation = Quaternion.Euler(new Vector3(0, 90*Random.Range(0,4), 0));
+                rooms[i,j] = newRoom;
             }
         }
 	}
