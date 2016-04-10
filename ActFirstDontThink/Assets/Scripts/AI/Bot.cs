@@ -197,4 +197,27 @@ public class Bot : MonoBehaviour
                 break;
         }
     }
+
+    public void launchInteraction()
+    {
+        float value = Random.Range(0f, 1f);
+        int animation;
+
+        if (value <= 0.5)
+        {
+            animation = 0;
+        }
+        else if (0.5 < value && value < 0.75)
+        {
+            animation = 1;
+        }
+        else
+        {
+            animation = 2;
+        }
+
+
+        m_animator.SetInteger(AnimationsVariables.m_avatar_Use, animation);
+        m_animator.SetBool(AnimationsVariables.m_avatar_isInteracting, true);
+    }
 }
