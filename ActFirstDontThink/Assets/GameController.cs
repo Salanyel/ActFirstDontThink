@@ -30,6 +30,7 @@ public class GameController : MonoBehaviour {
 
         // CREATING EVERYOOOOOOOOOONE
         avatars = new GameObject[nbPlayers + nbBots];
+        stats = new Stats[nbPlayers + nbBots];
 
         for (int i = 0; i < nbPlayers; ++i)
         {
@@ -47,6 +48,11 @@ public class GameController : MonoBehaviour {
 
     public void OnBotDeath(int deadGuyIndex, int killerIndex)
     {
+        GameObject newPlayer = GameObject.Instantiate(PlayerAvatar);
+        newPlayer.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
+        avatars[deadGuyIndex] = newPlayer;
+        newPlayer.GetComponent<PlayerId>().m_id = deadGuyIndex;
+
         stats[deadGuyIndex].deaths +=1;
         stats[killerIndex].kills += 1;
     }
