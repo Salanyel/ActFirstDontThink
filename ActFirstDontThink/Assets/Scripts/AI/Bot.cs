@@ -16,10 +16,13 @@ public class Bot : MonoBehaviour
     Actions currentAction;
     Animator m_animator;
 
+    private AudioSource willem;
+
     MazeBuilder builder;
 	// Use this for initialization
 	void Start ()
     {
+        willem = GetComponent<AudioSource>();
         agent = GetComponent<NavMeshAgent>();
         builder = GameObject.Find("MazeBuilder").GetComponent<MazeBuilder>();
         m_animator = GetComponent<Animator>();
@@ -42,6 +45,11 @@ public class Bot : MonoBehaviour
             actWithoutThinking();
         }
 	}
+
+    void OnDestoy()
+    {
+        willem.Play();
+    }
 
     void actWithoutThinking()
     {
