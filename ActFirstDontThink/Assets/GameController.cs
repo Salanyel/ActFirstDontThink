@@ -44,12 +44,6 @@ public class GameController : MonoBehaviour {
             avatars[i] = newBot;
         }
 	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-	    
-	}
 
     public void OnBotDeath(int deadGuyIndex, int killerIndex)
     {

@@ -7,6 +7,7 @@ public class TriggerObject : MonoBehaviour {
     List<ActionObject> targets;
     bool m_canBeActivated;
     int m_playerId;
+    GameController m_gameController;
 
     public float m_timeBeforeNewActivation;    
 
@@ -14,6 +15,14 @@ public class TriggerObject : MonoBehaviour {
     {
         targets = new List<ActionObject>();
         m_canBeActivated = true;
+
+        foreach(ActionObject actionObject in targets)
+        {
+            actionObject.setTriggerObject(this);
+        }
+
+        m_gameController = GameController.FindObjectOfType<GameController>();
+
     }
 
     public void setPlayerWhoUseIt(int p_id)
@@ -48,6 +57,12 @@ public class TriggerObject : MonoBehaviour {
     void playUseAnimation()
     {
         GetComponent<Animator>().SetBool(AnimationsVariables.m_interactibleObject_isUsed, true);
+    }
+
+    public void playerKilled(int p_index)
+    {
+        Debug.Log("Player " + p_index + " has been killed by the player " + m_playerId);
+        m_gameController.OnBotDeath(p_index, m_playerId);
     }
 
     IEnumerator waitBeforeNewActivation()

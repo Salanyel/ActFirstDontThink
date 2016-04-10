@@ -60,10 +60,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 466912}
   - 95: {fileID: 9586092}
-  - 114: {fileID: 11406324}
+  - 114: {fileID: 11435004}
+  - 65: {fileID: 6589926}
+  - 65: {fileID: 6552848}
   m_Layer: 0
   m_Name: Coal_Prefab
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -221,6 +223,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 171072}
   m_Mesh: {fileID: 4300000, guid: c38212ddec1a0d349a342a91662f0a34, type: 3}
+--- !u!65 &6552848
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.84, y: 0.51, z: 1.77}
+  m_Center: {x: 0, y: 0.25725472, z: 0}
+--- !u!65 &6589926
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 2.13, y: 1.79, z: 1.84}
+  m_Center: {x: 0, y: 0.25725472, z: 0}
 --- !u!95 &9586092
 Animator:
   serializedVersion: 3
@@ -238,7 +264,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11406324
+--- !u!114 &11435004
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -246,7 +272,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 182854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c62e51c02ed746d488c4ba9099746291, type: 3}
+  m_Script: {fileID: 11500000, guid: 9885e11000786af42b1cd7da7fe60fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &100100000

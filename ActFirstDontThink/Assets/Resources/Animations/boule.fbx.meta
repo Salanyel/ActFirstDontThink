@@ -1,18 +1,24 @@
 fileFormatVersion: 2
 guid: eb82d49e9567651468601de5edfa94ac
-timeCreated: 1460237043
+timeCreated: 1460250007
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
+    100000: Armature
+    100002: Bone
+    100004: Bone_end
+    100006: //RootNode
+    100008: Icosphere
+    400000: Armature
+    400002: Bone
+    400004: Bone_end
+    400006: //RootNode
+    400008: Icosphere
     4300000: Icosphere
-    7400000: Icosphere|chute
-    7400002: Icosphere|up
+    7400000: Armature|fall
     9500000: //RootNode
+    13700000: Icosphere
   materials:
     importMaterials: 1
     materialName: 0
@@ -33,7 +39,52 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|fall
+      takeName: Armature|fall
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.781155
+        functionName: disableKillingZone
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Bone_end
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
