@@ -1,9 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Serialization;
+
+[System.Serializable]
+public class ConfigPrefabs{
+	public List<GameObject> configPrefs;
+}
 
 public class MazeBuilder : MonoBehaviour {
 
     public List<GameObject> roomPrefabs;
+	public List<ConfigPrefabs> roomConfigPrefabs;
     public int roomSize = 10;
     public int labyrinthSize = 5;
 
@@ -28,9 +35,23 @@ public class MazeBuilder : MonoBehaviour {
                 int roomIndex = Random.Range(0, roomPrefabs.Count);
                 GameObject newRoom = Instantiate(roomPrefabs[roomIndex]);
                 newRoom.transform.SetParent(cell.transform);
-                newRoom.transform.position = new Vector3(i * roomSize + roomOffset, 0, j * roomSize + roomOffset);
-                newRoom.transform.rotation = Quaternion.Euler(new Vector3(0, 90*Random.Range(0,4), 0));
-                rooms[i,j] = newRoom;
+
+				Vector3 pos = new Vector3(i * roomSize + roomOffset, 0, j * roomSize + roomOffset);
+				Vector3 rot = new Vector3 (0, 90 * Random.Range (0, 4), 0);
+
+				newRoom.transform.position = pos;
+				newRoom.transform.rotation = Quaternion.Euler(rot);
+
+				if (roomConfigPrefabs [roomIndex].configPrefs.Count > 0) {
+					int confIndex = Random.Range (0, roomConfigPrefabs [roomIndex].configPrefs.Count);
+					GameObject newRoomConfig = Instantiate (roomConfigPrefabs[roomIndex].configPrefs[confIndex]);
+					newRoomConfig.transform.SetParent (cell.transform);
+					newRoomConfig.transform.position = pos;
+					newRoomConfig.transform.rotation = Quaternion.Euler (rot);
+
+				}
+                
+				rooms[i,j] = newRoom;
                 roomTypes[i, j] = roomIndex;
             }
         }
