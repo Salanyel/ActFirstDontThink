@@ -400,6 +400,15 @@ MonoBehaviour:
   - {fileID: 172522, guid: 6415c8d85c5ebb34882b0911eb497bd9, type: 2}
   - {fileID: 122002, guid: 484db9823f13ca9428a0518cb2d21f8e, type: 2}
   - {fileID: 190946, guid: cd7808792d6042c488b9728436fc74d3, type: 2}
+  roomConfigPrefabs:
+  - configPrefs: []
+  - configPrefs: []
+  - configPrefs: []
+  - configPrefs: []
+  - configPrefs: []
+  - configPrefs: []
+  - configPrefs: []
+  - configPrefs: []
   roomSize: 10
   labyrinthSize: 5
 --- !u!4 &1678966369
