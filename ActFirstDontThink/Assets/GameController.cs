@@ -120,6 +120,6 @@ public class GameController : MonoBehaviour {
     void cameraGetIn(GameObject p_camera, GameObject p_player)
     {
         p_camera.transform.SetParent(p_player.transform);
-        p_camera.GetComponent<CameraController>().setPosition();
+        p_camera.GetComponent<CameraController>().m_player = p_player;
     }
 }

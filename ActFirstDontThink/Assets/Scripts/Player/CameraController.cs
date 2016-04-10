@@ -5,18 +5,16 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 
     public Vector3 m_offset;
-    public Vector3 m_offsetRotation;
+
+    public GameObject m_player;
 
     void Start()
     {
-        m_offset = new Vector3(0, 3.44f, 0);
-        m_offsetRotation = new Vector3(90, 0, 0);
+        m_offset = new Vector3(0, 4, 0);
     }
 
-    public void setPosition()
+    void Update()
     {
-        transform.localPosition = m_offset;
-        transform.localEulerAngles = m_offsetRotation;
-        transform.localScale = new Vector3(1, 1, 1);
+        transform.position = m_player.transform.position + m_offset;
     }
 }
