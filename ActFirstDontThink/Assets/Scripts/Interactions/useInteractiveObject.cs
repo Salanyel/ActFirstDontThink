@@ -23,7 +23,6 @@ public class useInteractiveObject : MonoBehaviour {
     {
         if (p_other.gameObject.tag == Tags.m_interactibleObject)
         {
-            Debug.Log("Object detected");
             m_objects.Add(p_other.gameObject);
             shouldUseObject();
         }
@@ -89,13 +88,11 @@ public class useInteractiveObject : MonoBehaviour {
         }
         else
         {
-            Debug.Log("No object to activate from " + this.gameObject.name, this.gameObject);
         }
     }
 
         virtual protected void shouldUseObject()
         {
-            Debug.Log("Should Use Object");
             useNeariestInteractibleObject();
         }
 

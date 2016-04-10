@@ -40,11 +40,9 @@ public class ActionObject : MonoBehaviour {
             return;
         }
 
-        Debug.Log("Kill player", this.gameObject);
 
         if (p_other.gameObject.tag == Tags.m_avatar)
         {
-            Debug.Log("Player has been Killed");
             m_triggerObject.playerKilled(p_other.gameObject.GetComponent<PlayerId>().m_id);            
         }
     }
