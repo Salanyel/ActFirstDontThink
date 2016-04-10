@@ -35,6 +35,8 @@ public class ActionObject : MonoBehaviour {
     void OnTriggerEnter(Collider p_other)
     {
 
+        Debug.Log(p_other.gameObject.name);
+
         if (!m_killingZone.enabled)
         {
             return;
@@ -50,7 +52,6 @@ public class ActionObject : MonoBehaviour {
     {
         playUseAnimation();
         m_killingZone.enabled = true;
-        Debug.Log("Killing zone : " + m_killingZone.enabled);
     }    
 
     void playUseAnimation()

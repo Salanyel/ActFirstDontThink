@@ -34,7 +34,6 @@ public class TriggerObject : MonoBehaviour {
 
         if (!m_canBeActivated)
         {
-            Debug.Log("The object has to wait before being activated again");
             return;
         }
 
@@ -71,7 +70,6 @@ public class TriggerObject : MonoBehaviour {
 
         foreach (ActionObject t in targets)
         {
-            Debug.Log(t.gameObject.name + "activated");
             t.activate();
         }
 
