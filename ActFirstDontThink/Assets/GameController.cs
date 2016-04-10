@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
     public GameObject BotAvatar;
     public int nbBots;
     public int nbPlayers;
-
+    public float m_timeBeforeRespawn;
     struct Stats
     {
         public int score;
@@ -32,15 +32,19 @@ public class GameController : MonoBehaviour {
         avatars = new GameObject[nbPlayers + nbBots];
         stats = new Stats[nbPlayers + nbBots];
 
-        for (int i = 0; i < nbPlayers; ++i)
+        GameObject newBot = GameObject.Instantiate(BotAvatar);
+        newBot.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
+        avatars[0] = newBot;
+
+        for (int i = 1; i < nbPlayers; ++i)
         {
             GameObject newPlayer = GameObject.Instantiate(PlayerAvatar);
             newPlayer.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
             avatars[i] = newPlayer;
         }
-        for (int i = nbPlayers; i < (nbPlayers + nbBots); ++i)
+        for (int i = nbPlayers + 1; i < (nbPlayers + nbBots); ++i)
         {
-            GameObject newBot = GameObject.Instantiate(BotAvatar);
+            newBot = GameObject.Instantiate(BotAvatar);
             newBot.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
             avatars[i] = newBot;
         }
@@ -48,12 +52,27 @@ public class GameController : MonoBehaviour {
 
     public void OnBotDeath(int deadGuyIndex, int killerIndex)
     {
+        GameObject deadAvatar = avatars[deadGuyIndex];
+        deadAvatar.SetActive(false);
+
+        stats[deadGuyIndex].deaths += 1;
+        stats[killerIndex].kills += 1;
+
+        StartCoroutine(waitBeforeRespawn(deadGuyIndex));
+    }
+
+    IEnumerator waitBeforeRespawn(int deadGuyIndex)
+    {
+        yield return new WaitForSeconds(m_timeBeforeRespawn);
+
+        GameObject deadAvatar = avatars[deadGuyIndex];
+        deadAvatar.SetActive(false);
+
+        Destroy(deadAvatar);
+
         GameObject newPlayer = GameObject.Instantiate(PlayerAvatar);
         newPlayer.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
         avatars[deadGuyIndex] = newPlayer;
-        newPlayer.GetComponent<PlayerId>().m_id = deadGuyIndex;
-
-        stats[deadGuyIndex].deaths +=1;
-        stats[killerIndex].kills += 1;
+        newPlayer.GetComponent<PlayerId>().m_id = deadGuyIndex;        
     }
 }
