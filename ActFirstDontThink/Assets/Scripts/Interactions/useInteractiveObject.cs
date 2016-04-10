@@ -81,6 +81,7 @@ public class useInteractiveObject : MonoBehaviour {
                 //Escroquerie
                 Vector3 vector = new Vector3(0f, transform.localEulerAngles.y, 0f);
                 transform.localEulerAngles = vector;
+
                 if (GetComponent<PlayerController>() == null)
                 {
                     GetComponent<Bot>().launchInteraction();
