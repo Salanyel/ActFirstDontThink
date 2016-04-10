@@ -14,14 +14,6 @@ public class useInteractiveObject : MonoBehaviour {
         initialize();
     }
 
-    void Update()
-    {
-        if (m_objects.Count > 0)
-        {
-            shouldUseObject();
-        }        
-    }
-
     virtual protected void initialize()
     {
 
@@ -31,7 +23,9 @@ public class useInteractiveObject : MonoBehaviour {
     {
         if (p_other.gameObject.tag == Tags.m_interactibleObject)
         {
+            Debug.Log("Object detected");
             m_objects.Add(p_other.gameObject);
+            shouldUseObject();
         }
     }
 
@@ -104,7 +98,7 @@ public class useInteractiveObject : MonoBehaviour {
 
         virtual protected void shouldUseObject()
         {
-        Debug.Log("Should Use Object");
+            Debug.Log("Should Use Object");
             useNeariestInteractibleObject();
         }
 
