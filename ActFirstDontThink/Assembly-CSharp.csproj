@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\Navigation\MoveTo.cs" />
      <Compile Include="Assets\Scripts\Navigation\MoveToClicked.cs" />
      <Compile Include="Assets\Scripts\Navigation\TryActivate.cs" />
+     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerId.cs" />
      <Compile Include="Assets\Scripts\TrackPosition.cs" />
