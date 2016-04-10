@@ -4,7 +4,7 @@ using System.Collections;
 public class ActionObject : MonoBehaviour {
 
     public BoxCollider m_killingZone;
-    protected TriggerObject m_triggerObject;
+    public TriggerObject m_triggerObject;
     void Start()
     {
         initialize();
@@ -34,9 +34,16 @@ public class ActionObject : MonoBehaviour {
 
     void OnTriggerEnter(Collider p_other)
     {
+
+        if (!m_killingZone.enabled)
+        {
+            return;
+        }            
+
         if (p_other.gameObject.tag == Tags.m_avatar)
         {
-            m_triggerObject.playerKilled(p_other.gameObject.GetComponent<PlayerId>().m_id);
+            Destroy(p_other.gameObject);
+            m_triggerObject.playerKilled(p_other.gameObject.GetComponent<PlayerId>().m_id);            
         }
     }
 

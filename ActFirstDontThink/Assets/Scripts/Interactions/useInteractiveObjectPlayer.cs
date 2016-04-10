@@ -4,13 +4,18 @@ using System.Collections.Generic;
 
 public class useInteractiveObjectPlayer : useInteractiveObject {
 
-    public string m_virtualActivateButton;
+    string m_virtualActivateButton;
 
     #region Methods
 
+    override protected void initialize()
+    {
+        m_virtualActivateButton = "UseP" + GetComponent<PlayerId>().m_id;
+    }
+
     override protected void shouldUseObject()
     {
-        if (Input.GetButtonDown(m_virtualActivateButton))
+        if (Input.GetButtonUp(m_virtualActivateButton))
         {
             useNeariestInteractibleObject();
         }        

@@ -11,6 +11,7 @@ public class useInteractiveObject : MonoBehaviour {
     void Start()
     {
         m_objects = new List<GameObject>();
+        initialize();
     }
 
     void Update()
@@ -19,6 +20,11 @@ public class useInteractiveObject : MonoBehaviour {
         {
             shouldUseObject();
         }        
+    }
+
+    virtual protected void initialize()
+    {
+
     }
 
     void OnTriggerEnter(Collider p_other)
@@ -41,7 +47,7 @@ public class useInteractiveObject : MonoBehaviour {
 
         #region Methods
 
-        protected void useNeariestInteractibleObject()
+    protected void useNeariestInteractibleObject()
     {
         GameObject gameObject;
         float distance = -1;
@@ -62,9 +68,25 @@ public class useInteractiveObject : MonoBehaviour {
 
         if (index != -1)
         {
-            Debug.Log("Object triggered : " + m_objects[index].name, m_objects[index]);
-            m_objects[index].GetComponent<TriggerObject>().setPlayerWhoUseIt(GetComponent<PlayerId>().m_id);
-            m_objects[index].GetComponent<TriggerObject>().Activate();
+
+            if (m_objects[index].GetComponent<TriggerObject>().m_canBeActivated)
+            {
+                Debug.Log("Object triggered : " + m_objects[index].name + " by player " + this.gameObject.GetComponent<PlayerId>().m_id, m_objects[index]);
+                m_objects[index].GetComponent<TriggerObject>().setPlayerWhoUseIt(GetComponent<PlayerId>().m_id);
+                m_objects[index].GetComponent<TriggerObject>().Activate();
+                transform.LookAt(m_objects[index].transform.position);
+
+                Debug.Log(transform.localEulerAngles.y);
+
+                //Escroquerie
+                Vector3 vector = new Vector3(0f, transform.localEulerAngles.y, 0f);
+                transform.localEulerAngles = vector;
+                GetComponent<PlayerController>().launchInteraction();
+            }         
+            else
+            {
+                Debug.Log("The object has to wait before being activated again");
+            }   
         }
         else
         {

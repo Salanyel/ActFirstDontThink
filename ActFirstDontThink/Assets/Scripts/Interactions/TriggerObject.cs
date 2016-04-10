@@ -4,8 +4,8 @@ using System.Collections;
 
 public class TriggerObject : MonoBehaviour {
 
-    List<ActionObject> targets;
-    bool m_canBeActivated;
+    public List<ActionObject> targets;
+    public bool m_canBeActivated;
     int m_playerId;
     GameController m_gameController;
 
@@ -13,7 +13,6 @@ public class TriggerObject : MonoBehaviour {
 
     void Start()
     {
-        targets = new List<ActionObject>();
         m_canBeActivated = true;
 
         foreach(ActionObject actionObject in targets)
@@ -45,13 +44,8 @@ public class TriggerObject : MonoBehaviour {
 
         playUseAnimation();
 
-        foreach (ActionObject t in targets)
-        {
-            t.activate();
-        }
-
-        StartCoroutine(waitBeforeNewActivation());
-
+        StartCoroutine(waitBeforeActivation());
+                    
     }
 
     void playUseAnimation()
@@ -69,5 +63,19 @@ public class TriggerObject : MonoBehaviour {
     {
         yield return new WaitForSeconds(m_timeBeforeNewActivation);
         m_canBeActivated = true;
+    }
+
+    IEnumerator waitBeforeActivation()
+    {
+        yield return new WaitForSeconds(2f);
+
+        foreach (ActionObject t in targets)
+        {
+            Debug.Log(t.gameObject.name + "activated");
+            t.activate();
+        }
+
+        StartCoroutine(waitBeforeNewActivation());
+
     }
 }

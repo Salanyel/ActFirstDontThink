@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: 6cdf889699553a747b708971824dd8c1
+timeCreated: 1460253611
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Boxers
+    100004: head
+    100006: head_end
+    100008: L1
+    100010: L2
+    100012: L3
+    100014: L4
+    100016: L4_end
+    100018: L5
+    100020: L5_end
+    100022: L6
+    100024: L6_end
+    100026: L7
+    100028: L7_end
+    100030: L8
+    100032: L8_end
+    100034: LL1
+    100036: LL2
+    100038: LL3
+    100040: LL3_end
+    100042: //RootNode
+    100044: R1
+    100046: R2
+    100048: R3
+    100050: R4
+    100052: R4_end
+    100054: R5
+    100056: R5_end
+    100058: R6
+    100060: R6_end
+    100062: R7
+    100064: R7_end
+    100066: R8
+    100068: R8_end
+    100070: RL1
+    100072: RL2
+    100074: RL3
+    100076: RL3_end
+    100078: trunck
+    100080: trunck2
+    100082: trunck3
+    400000: Armature
+    400002: Boxers
+    400004: head
+    400006: head_end
+    400008: L1
+    400010: L2
+    400012: L3
+    400014: L4
+    400016: L4_end
+    400018: L5
+    400020: L5_end
+    400022: L6
+    400024: L6_end
+    400026: L7
+    400028: L7_end
+    400030: L8
+    400032: L8_end
+    400034: LL1
+    400036: LL2
+    400038: LL3
+    400040: LL3_end
+    400042: //RootNode
+    400044: R1
+    400046: R2
+    400048: R3
+    400050: R4
+    400052: R4_end
+    400054: R5
+    400056: R5_end
+    400058: R6
+    400060: R6_end
+    400062: R7
+    400064: R7_end
+    400066: R8
+    400068: R8_end
+    400070: RL1
+    400072: RL2
+    400074: RL3
+    400076: RL3_end
+    400078: trunck
+    400080: trunck2
+    400082: trunck3
+    4300000: Boxers
+    7400000: Finger
+    7400002: Foot
+    7400004: Head
+    7400006: Idle
+    7400008: Walk
+    9500000: //RootNode
+    13700000: Boxers
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Finger
+      takeName: Armature|boutton
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/trunck
+        weight: 1
+      - path: Armature/trunck/LL1
+        weight: 1
+      - path: Armature/trunck/LL1/LL2
+        weight: 1
+      - path: Armature/trunck/LL1/LL2/LL3
+        weight: 1
+      - path: Armature/trunck/LL1/LL2/LL3/LL3_end
+        weight: 1
+      - path: Armature/trunck/RL1
+        weight: 1
+      - path: Armature/trunck/RL1/RL2
+        weight: 1
+      - path: Armature/trunck/RL1/RL2/RL3
+        weight: 1
+      - path: Armature/trunck/RL1/RL2/RL3/RL3_end
+        weight: 1
+      - path: Armature/trunck/trunck2
+        weight: 1
+      - path: Armature/trunck/trunck2/L1
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L4
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L4/L4_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L5
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L5/L5_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L6
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L6/L6_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L7
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L7/L7_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L8
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L8/L8_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R4
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R4/R4_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R5
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R5/R5_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R6
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R6/R6_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R7
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R7/R7_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R8
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R8/R8_end
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3/head
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3/head/head_end
+        weight: 1
+      - path: Boxers
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Foot
+      takeName: Armature|boutton2
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/trunck
+        weight: 1
+      - path: Armature/trunck/LL1
+        weight: 1
+      - path: Armature/trunck/LL1/LL2
+        weight: 1
+      - path: Armature/trunck/LL1/LL2/LL3
+        weight: 1
+      - path: Armature/trunck/LL1/LL2/LL3/LL3_end
+        weight: 1
+      - path: Armature/trunck/RL1
+        weight: 1
+      - path: Armature/trunck/RL1/RL2
+        weight: 1
+      - path: Armature/trunck/RL1/RL2/RL3
+        weight: 1
+      - path: Armature/trunck/RL1/RL2/RL3/RL3_end
+        weight: 1
+      - path: Armature/trunck/trunck2
+        weight: 1
+      - path: Armature/trunck/trunck2/L1
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L4
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L4/L4_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L5
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L5/L5_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L6
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L6/L6_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L7
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L7/L7_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L8
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L8/L8_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R4
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R4/R4_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R5
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R5/R5_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R6
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R6/R6_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R7
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R7/R7_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R8
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R8/R8_end
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3/head
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3/head/head_end
+        weight: 1
+      - path: Boxers
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Head
+      takeName: Armature|boutton3
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/trunck
+        weight: 1
+      - path: Armature/trunck/LL1
+        weight: 1
+      - path: Armature/trunck/LL1/LL2
+        weight: 1
+      - path: Armature/trunck/LL1/LL2/LL3
+        weight: 1
+      - path: Armature/trunck/LL1/LL2/LL3/LL3_end
+        weight: 1
+      - path: Armature/trunck/RL1
+        weight: 1
+      - path: Armature/trunck/RL1/RL2
+        weight: 1
+      - path: Armature/trunck/RL1/RL2/RL3
+        weight: 1
+      - path: Armature/trunck/RL1/RL2/RL3/RL3_end
+        weight: 1
+      - path: Armature/trunck/trunck2
+        weight: 1
+      - path: Armature/trunck/trunck2/L1
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L4
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L4/L4_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L5
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L5/L5_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L6
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L6/L6_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L7
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L7/L7_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L8
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L8/L8_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R4
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R4/R4_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R5
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R5/R5_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R6
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R6/R6_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R7
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R7/R7_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R8
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R8/R8_end
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3/head
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3/head/head_end
+        weight: 1
+      - path: Boxers
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Armature|loop
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/trunck
+        weight: 1
+      - path: Armature/trunck/LL1
+        weight: 1
+      - path: Armature/trunck/LL1/LL2
+        weight: 1
+      - path: Armature/trunck/LL1/LL2/LL3
+        weight: 1
+      - path: Armature/trunck/LL1/LL2/LL3/LL3_end
+        weight: 1
+      - path: Armature/trunck/RL1
+        weight: 1
+      - path: Armature/trunck/RL1/RL2
+        weight: 1
+      - path: Armature/trunck/RL1/RL2/RL3
+        weight: 1
+      - path: Armature/trunck/RL1/RL2/RL3/RL3_end
+        weight: 1
+      - path: Armature/trunck/trunck2
+        weight: 1
+      - path: Armature/trunck/trunck2/L1
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L4
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L4/L4_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L5
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L5/L5_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L6
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L6/L6_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L7
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L7/L7_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L8
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L8/L8_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R4
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R4/R4_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R5
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R5/R5_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R6
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R6/R6_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R7
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R7/R7_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R8
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R8/R8_end
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3/head
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3/head/head_end
+        weight: 1
+      - path: Boxers
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Armature|marche
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/trunck
+        weight: 1
+      - path: Armature/trunck/LL1
+        weight: 1
+      - path: Armature/trunck/LL1/LL2
+        weight: 1
+      - path: Armature/trunck/LL1/LL2/LL3
+        weight: 1
+      - path: Armature/trunck/LL1/LL2/LL3/LL3_end
+        weight: 1
+      - path: Armature/trunck/RL1
+        weight: 1
+      - path: Armature/trunck/RL1/RL2
+        weight: 1
+      - path: Armature/trunck/RL1/RL2/RL3
+        weight: 1
+      - path: Armature/trunck/RL1/RL2/RL3/RL3_end
+        weight: 1
+      - path: Armature/trunck/trunck2
+        weight: 1
+      - path: Armature/trunck/trunck2/L1
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L4
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L4/L4_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L5
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L5/L5_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L6
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L6/L6_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L7
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L7/L7_end
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L8
+        weight: 1
+      - path: Armature/trunck/trunck2/L1/L2/L3/L8/L8_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R4
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R4/R4_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R5
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R5/R5_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R6
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R6/R6_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R7
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R7/R7_end
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R8
+        weight: 1
+      - path: Armature/trunck/trunck2/R1/R2/R3/R8/R8_end
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3/head
+        weight: 1
+      - path: Armature/trunck/trunck2/trunck3/head/head_end
+        weight: 1
+      - path: Boxers
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
