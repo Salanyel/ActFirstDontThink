@@ -14,6 +14,7 @@ public class Bot : MonoBehaviour
 
     NavMeshAgent agent;
     Actions currentAction;
+    Animator m_animator;
 
     MazeBuilder builder;
 	// Use this for initialization
@@ -21,6 +22,7 @@ public class Bot : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         builder = GameObject.Find("MazeBuilder").GetComponent<MazeBuilder>();
+        m_animator = GetComponent<Animator>();
     }
  
 	// Update is called once per frame
@@ -29,12 +31,14 @@ public class Bot : MonoBehaviour
 
         if (currentAction == Actions.TRAVELLING && agent.remainingDistance <4.5f)    
         {
-           
+            m_animator.SetBool(AnimationsVariables.m_avatar_isWalking, true);
+            GetComponent<useInteractiveObject>().enabled = false;
             actWithoutThinking();
         }
         else if(currentAction == Actions.PLOTTING && agent.remainingDistance <1f)
         {
-            // TODO: activate object
+            GetComponent<useInteractiveObject>().enabled = true;
+            m_animator.SetBool(AnimationsVariables.m_avatar_isWalking, false);
             actWithoutThinking();
         }
 	}
@@ -192,5 +196,28 @@ public class Bot : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public void launchInteraction()
+    {
+        float value = Random.Range(0f, 1f);
+        int animation;
+
+        if (value <= 0.5)
+        {
+            animation = 0;
+        }
+        else if (0.5 < value && value < 0.75)
+        {
+            animation = 1;
+        }
+        else
+        {
+            animation = 2;
+        }
+
+
+        m_animator.SetInteger(AnimationsVariables.m_avatar_Use, animation);
+        m_animator.SetBool(AnimationsVariables.m_avatar_isInteracting, true);
     }
 }
