@@ -35,15 +35,16 @@ public class ActionObject : MonoBehaviour {
     void OnTriggerEnter(Collider p_other)
     {
 
-        Debug.Log(p_other.gameObject.name);
-
         if (!m_killingZone.enabled)
         {
             return;
-        }            
+        }
+
+        Debug.Log("Kill player", this.gameObject);
 
         if (p_other.gameObject.tag == Tags.m_avatar)
         {
+            Debug.Log("Player has been Killed");
             m_triggerObject.playerKilled(p_other.gameObject.GetComponent<PlayerId>().m_id);            
         }
     }

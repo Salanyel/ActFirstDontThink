@@ -37,8 +37,6 @@ public class TriggerObject : MonoBehaviour {
             return;
         }
 
-        Debug.Log(this.gameObject.name + " has been activated by player " + m_playerId, this.gameObject);
-
         m_canBeActivated = false;
 
         playUseAnimation();
