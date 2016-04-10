@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2342920}
   - 208: {fileID: 20885312}
   - 54: {fileID: 5493662}
+  - 65: {fileID: 6517276}
   m_Layer: 0
   m_Name: wall
   m_TagString: Untagged
@@ -79,6 +80,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &6517276
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163714}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.010000005, y: 0.0010000035, z: 0.020000007}
+  m_Center: {x: 9.287499e-11, y: -6.879278e-10, z: 0.010000003}
 --- !u!208 &20885312
 NavMeshObstacle:
   m_ObjectHideFlags: 1
