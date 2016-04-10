@@ -228,7 +228,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 663220496}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 43.64, z: 0}
+  m_LocalPosition: {x: 22.25, y: 43.64, z: 24.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -401,14 +401,32 @@ MonoBehaviour:
   - {fileID: 122002, guid: 484db9823f13ca9428a0518cb2d21f8e, type: 2}
   - {fileID: 190946, guid: cd7808792d6042c488b9728436fc74d3, type: 2}
   roomConfigPrefabs:
-  - configPrefs: []
-  - configPrefs: []
-  - configPrefs: []
-  - configPrefs: []
-  - configPrefs: []
-  - configPrefs: []
-  - configPrefs: []
-  - configPrefs: []
+  - configPrefs:
+    - {fileID: 117302, guid: 53c8109e872bdec418ffd05c8464e0db, type: 2}
+    - {fileID: 199154, guid: 429c21dee20de3342af46c09b7522341, type: 2}
+  - configPrefs:
+    - {fileID: 170228, guid: 989c625fdfce42a4497a0aec054e3bc8, type: 2}
+    - {fileID: 118406, guid: 84ac1bce32d54ff4cbb9c33247f56a32, type: 2}
+  - configPrefs:
+    - {fileID: 122868, guid: da99dc102df09214192028b7a2648a47, type: 2}
+    - {fileID: 140674, guid: 0b72bc9b3db81a04a92b38b438daa31b, type: 2}
+  - configPrefs:
+    - {fileID: 141490, guid: 28b978f60e8084b40879e9f97e0deb9c, type: 2}
+    - {fileID: 160486, guid: 4acaba805663f554ebb83ffb15179d22, type: 2}
+  - configPrefs:
+    - {fileID: 153978, guid: ce9d387dda5a4fb41a5808d4f1106c8d, type: 2}
+    - {fileID: 171338, guid: cec134f99e1eeb444b9a7646720a846e, type: 2}
+  - configPrefs:
+    - {fileID: 194050, guid: 262bdd34794f3394fa1edc8207f86a96, type: 2}
+    - {fileID: 147324, guid: 922e54b81b2c53a4ab18ce37a16b5f01, type: 2}
+    - {fileID: 106928, guid: ff9c9224640ba6b4687cbee4ba33f6f5, type: 2}
+  - configPrefs:
+    - {fileID: 181818, guid: 438c29e180c707541b1dfb802133a65d, type: 2}
+    - {fileID: 166958, guid: d3183fec72a825c4bb4de1d6e3468b23, type: 2}
+    - {fileID: 162330, guid: 2bfd89a6ed53ae14ab8870bf5f30cebc, type: 2}
+  - configPrefs:
+    - {fileID: 141966, guid: 338f8dd9dd8c70349886cff4a06d0772, type: 2}
+    - {fileID: 103862, guid: 1c944f9d83edac2499e71c51b0822e32, type: 2}
   roomSize: 10
   labyrinthSize: 5
 --- !u!4 &1678966369
