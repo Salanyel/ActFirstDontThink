@@ -104,6 +104,7 @@ public class useInteractiveObject : MonoBehaviour {
 
         virtual protected void shouldUseObject()
         {
+        Debug.Log("Should Use Object");
             useNeariestInteractibleObject();
         }
 

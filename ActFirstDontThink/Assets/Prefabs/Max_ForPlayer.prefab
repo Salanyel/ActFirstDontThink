@@ -608,6 +608,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &196858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 481604}
+  - 20: {fileID: 2061268}
+  - 92: {fileID: 9234818}
+  - 124: {fileID: 12459342}
+  - 81: {fileID: 8167784}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: CameraP1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &197232
 GameObject:
   m_ObjectHideFlags: 1
@@ -673,11 +692,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.679737, y: 6.8620654e-17, z: 9.548002}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 466110}
   - {fileID: 491888}
+  - {fileID: 481604}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &407936
@@ -1105,6 +1125,18 @@ Transform:
   - {fileID: 476646}
   m_Father: {fileID: 424980}
   m_RootOrder: 0
+--- !u!4 &481604
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196858}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 3.44, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405188}
+  m_RootOrder: 2
 --- !u!4 &482048
 Transform:
   m_ObjectHideFlags: 1
@@ -1183,6 +1215,40 @@ Transform:
   - {fileID: 402898}
   m_Father: {fileID: 400334}
   m_RootOrder: 2
+--- !u!20 &2061268
+Camera:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196858}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 1.44
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
 --- !u!54 &5430892
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -1198,6 +1264,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!81 &8167784
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196858}
+  m_Enabled: 1
+--- !u!92 &9234818
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196858}
+  m_Enabled: 1
 --- !u!95 &9584950
 Animator:
   serializedVersion: 3
@@ -1252,6 +1332,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_objects: []
+--- !u!124 &12459342
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196858}
+  m_Enabled: 1
 --- !u!135 &13519804
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1287,10 +1374,10 @@ SkinnedMeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 02e2b1c0e8455f343b0c381797a61c34, type: 2}
-  - {fileID: 2100000, guid: 02ed6120c023e7d49abc52108954f8b3, type: 2}
-  - {fileID: 2100000, guid: 9693fd591c730084d8192a2ce5024b4b, type: 2}
-  - {fileID: 2100000, guid: 3456d5dd52e5627438a622ef607be7d1, type: 2}
+  - {fileID: 2100000, guid: 21d025a3c492d554bbf373f526e4ed3f, type: 2}
+  - {fileID: 2100000, guid: dc112d752af2ab047b33eb366951b623, type: 2}
+  - {fileID: 2100000, guid: cc40407517133aa4b9e32d61d036ebb6, type: 2}
+  - {fileID: 2100000, guid: 122e9fb5099765146980e4cde1067de7, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1

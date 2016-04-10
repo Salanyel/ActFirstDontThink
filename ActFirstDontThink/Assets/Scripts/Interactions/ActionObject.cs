@@ -42,7 +42,6 @@ public class ActionObject : MonoBehaviour {
 
         if (p_other.gameObject.tag == Tags.m_avatar)
         {
-            Destroy(p_other.gameObject);
             m_triggerObject.playerKilled(p_other.gameObject.GetComponent<PlayerId>().m_id);            
         }
     }

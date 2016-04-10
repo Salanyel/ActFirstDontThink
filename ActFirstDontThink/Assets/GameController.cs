@@ -10,6 +10,9 @@ public class GameController : MonoBehaviour {
     public int nbBots;
     public int nbPlayers;
     public float m_timeBeforeRespawn;
+
+    public GameObject m_player1;
+
     struct Stats
     {
         public int score;
@@ -41,6 +44,11 @@ public class GameController : MonoBehaviour {
             GameObject newPlayer = GameObject.Instantiate(PlayerAvatar);
             newPlayer.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
             avatars[i] = newPlayer;
+
+            if (i == 1)
+            {
+                m_player1 = GameObject.FindGameObjectWithTag(Tags.m_cameraP1);
+            }
         }
         for (int i = nbPlayers + 1; i < (nbPlayers + nbBots); ++i)
         {
@@ -68,11 +76,50 @@ public class GameController : MonoBehaviour {
         GameObject deadAvatar = avatars[deadGuyIndex];
         deadAvatar.SetActive(false);
 
+        switch (deadGuyIndex)
+        {
+            case 1:
+                cameraGetOut(m_player1);
+                break;
+
+            case 2:
+                cameraGetOut(m_player1);
+                break;
+
+            default:
+                break;
+        }
+
         Destroy(deadAvatar);
 
         GameObject newPlayer = GameObject.Instantiate(PlayerAvatar);
         newPlayer.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
         avatars[deadGuyIndex] = newPlayer;
-        newPlayer.GetComponent<PlayerId>().m_id = deadGuyIndex;        
+        newPlayer.GetComponent<PlayerId>().m_id = deadGuyIndex;
+
+        switch (deadGuyIndex)
+        {
+            case 1:
+                cameraGetIn(m_player1, newPlayer);
+                break;
+
+            case 2:
+                cameraGetIn(m_player1, newPlayer);
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    void cameraGetOut(GameObject p_camera)
+    {
+        p_camera.transform.SetParent(transform);
+    }
+
+    void cameraGetIn(GameObject p_camera, GameObject p_player)
+    {
+        p_camera.transform.SetParent(p_player.transform);
+        p_camera.GetComponent<CameraController>().setPosition();
     }
 }

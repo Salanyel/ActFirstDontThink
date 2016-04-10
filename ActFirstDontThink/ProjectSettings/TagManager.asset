@@ -7,6 +7,7 @@ TagManager:
   - InteractibleObject
   - Trap
   - Avatar
+  - CameraP1
   layers:
   - Default
   - TransparentFX
