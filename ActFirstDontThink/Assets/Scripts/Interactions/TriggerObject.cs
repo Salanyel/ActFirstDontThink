@@ -34,11 +34,8 @@ public class TriggerObject : MonoBehaviour {
 
         if (!m_canBeActivated)
         {
-            Debug.Log("The object has to wait before being activated again");
             return;
         }
-
-        Debug.Log(this.gameObject.name + " has been activated by player " + m_playerId, this.gameObject);
 
         m_canBeActivated = false;
 
@@ -71,7 +68,6 @@ public class TriggerObject : MonoBehaviour {
 
         foreach (ActionObject t in targets)
         {
-            Debug.Log(t.gameObject.name + "activated");
             t.activate();
         }
 

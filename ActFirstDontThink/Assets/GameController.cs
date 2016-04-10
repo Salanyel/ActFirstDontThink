@@ -13,7 +13,7 @@ public class GameController : MonoBehaviour {
 
     public GameObject m_player1;
 
-    struct Stats
+    public struct Stats
     {
         public int score;
         public int deaths;
@@ -24,7 +24,7 @@ public class GameController : MonoBehaviour {
 
     // bots
     GameObject[] avatars;
-    Stats[] stats;
+    public Stats[] stats;
 
 	void Start ()
     {
@@ -39,15 +39,17 @@ public class GameController : MonoBehaviour {
         newBot.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
         avatars[0] = newBot;
 
-        for (int i = 1; i < nbPlayers; ++i)
+        for (int i = 1; i < nbPlayers + 1; ++i)
         {
             GameObject newPlayer = GameObject.Instantiate(PlayerAvatar);
             newPlayer.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
             avatars[i] = newPlayer;
+            newPlayer.GetComponent<PlayerId>().m_id = i;
 
             if (i == 1)
             {
                 m_player1 = GameObject.FindGameObjectWithTag(Tags.m_cameraP1);
+                m_player1.GetComponent<CameraController>().m_player = newPlayer;
             }
         }
         for (int i = nbPlayers + 1; i < (nbPlayers + nbBots); ++i)
@@ -55,6 +57,7 @@ public class GameController : MonoBehaviour {
             newBot = GameObject.Instantiate(BotAvatar);
             newBot.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
             avatars[i] = newBot;
+            newBot.GetComponent<PlayerId>().m_id = i;
         }
 	}
 
@@ -71,6 +74,9 @@ public class GameController : MonoBehaviour {
 
     IEnumerator waitBeforeRespawn(int deadGuyIndex)
     {
+
+        GameObject newPlayer;
+
         yield return new WaitForSeconds(m_timeBeforeRespawn);
 
         GameObject deadAvatar = avatars[deadGuyIndex];
@@ -80,19 +86,16 @@ public class GameController : MonoBehaviour {
         {
             case 1:
                 cameraGetOut(m_player1);
-                break;
-
-            case 2:
-                cameraGetOut(m_player1);
+                newPlayer = GameObject.Instantiate(PlayerAvatar);
                 break;
 
             default:
+                newPlayer = GameObject.Instantiate(BotAvatar);
                 break;
         }
 
         Destroy(deadAvatar);
 
-        GameObject newPlayer = GameObject.Instantiate(PlayerAvatar);
         newPlayer.transform.position = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
         avatars[deadGuyIndex] = newPlayer;
         newPlayer.GetComponent<PlayerId>().m_id = deadGuyIndex;
@@ -100,10 +103,6 @@ public class GameController : MonoBehaviour {
         switch (deadGuyIndex)
         {
             case 1:
-                cameraGetIn(m_player1, newPlayer);
-                break;
-
-            case 2:
                 cameraGetIn(m_player1, newPlayer);
                 break;
 
@@ -119,7 +118,6 @@ public class GameController : MonoBehaviour {
 
     void cameraGetIn(GameObject p_camera, GameObject p_player)
     {
-        p_camera.transform.SetParent(p_player.transform);
         p_camera.GetComponent<CameraController>().m_player = p_player;
     }
 }

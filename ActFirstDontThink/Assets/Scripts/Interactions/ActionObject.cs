@@ -38,10 +38,13 @@ public class ActionObject : MonoBehaviour {
         if (!m_killingZone.enabled)
         {
             return;
-        }            
+        }
+
+        Debug.Log("Kill player", this.gameObject);
 
         if (p_other.gameObject.tag == Tags.m_avatar)
         {
+            Debug.Log("Player has been Killed");
             m_triggerObject.playerKilled(p_other.gameObject.GetComponent<PlayerId>().m_id);            
         }
     }
@@ -50,7 +53,6 @@ public class ActionObject : MonoBehaviour {
     {
         playUseAnimation();
         m_killingZone.enabled = true;
-        Debug.Log("Killing zone : " + m_killingZone.enabled);
     }    
 
     void playUseAnimation()

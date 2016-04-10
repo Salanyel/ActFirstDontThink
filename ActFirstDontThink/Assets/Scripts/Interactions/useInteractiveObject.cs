@@ -65,12 +65,10 @@ public class useInteractiveObject : MonoBehaviour {
 
             if (m_objects[index].GetComponent<TriggerObject>().m_canBeActivated)
             {
-                Debug.Log("Object triggered : " + m_objects[index].name + " by player " + this.gameObject.GetComponent<PlayerId>().m_id, m_objects[index]);
+                //Debug.Log("Object triggered : " + m_objects[index].name + " by player " + this.gameObject.GetComponent<PlayerId>().m_id, m_objects[index]);
                 m_objects[index].GetComponent<TriggerObject>().setPlayerWhoUseIt(GetComponent<PlayerId>().m_id);
                 m_objects[index].GetComponent<TriggerObject>().Activate();
                 transform.LookAt(m_objects[index].transform.position);
-
-                Debug.Log(transform.localEulerAngles.y);
 
                 //Escroquerie
                 Vector3 vector = new Vector3(0f, transform.localEulerAngles.y, 0f);
@@ -87,7 +85,6 @@ public class useInteractiveObject : MonoBehaviour {
             }         
             else
             {
-                Debug.Log("The object has to wait before being activated again");
             }   
         }
         else

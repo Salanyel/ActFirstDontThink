@@ -6,6 +6,14 @@ public class useInteractiveObjectPlayer : useInteractiveObject {
 
     string m_virtualActivateButton;
 
+    void Update()
+    {
+        if (m_objects.Count > 0)
+        {
+            shouldUseObject();
+        }
+    }
+
     #region Methods
 
     override protected void initialize()
@@ -15,10 +23,10 @@ public class useInteractiveObjectPlayer : useInteractiveObject {
 
     override protected void shouldUseObject()
     {
-        if (Input.GetButtonUp(m_virtualActivateButton))
+        if (Input.GetButton(m_virtualActivateButton))
         {
             useNeariestInteractibleObject();
-        }        
+        }               
     }
 
     #endregion
