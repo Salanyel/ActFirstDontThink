@@ -5,7 +5,7 @@ public class ButtonScript : MonoBehaviour {
 
     public ActionObject m_trap;
 
-	void Start () {
+	void Update () {
         m_trap = FindObjectOfType<ActionObject>();
 	}
 	
